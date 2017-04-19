@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hero Form</title>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/forms.css">
+
+    <!-- Polyfills -->
+    <script src="js/lib/shim.min.js"></script>
+
+    <script src="js/lib/zone.js"></script>
+    <script src="js/lib/system.src.js"></script>
+
+    <script src="js/systemjs.config.js"></script>
+    <script>
+        System.import('js/app/main.js').catch(function(err) {
+            console.error(err);
+        });
+    </script>
+</head>
+
+<body>
+    <my-app>Loading...</my-app>
+</body>
+
+</html>
