@@ -9,7 +9,7 @@ import { Hero }    from './hero';
 export class HeroFormComponent {
 
   powers = ['Really Smart', 'Super Flexible',
-            'Super Hot', 'Weather Changer'];
+            'Super Hot', 'Weather Changer', 'Fetch any object at any distance'];
 
   model = new Hero(18, 'Dr IQ', this.powers[0], 'Chuck Overstreet');
 
@@ -23,7 +23,7 @@ export class HeroFormComponent {
   get diagnostic() { return JSON.stringify(this.model); }
 
   newHero() {
-    this.model = new Hero(42, '', '');
+    this.model = this.skyDog(); //new Hero(42, '', '');
   }
 
   skyDog(): Hero {
