@@ -72,7 +72,8 @@ gulp.task('copylibs', ['cleanlib', 'copynglibs', 'copyrxlibs'], function() {
         .src([
             'node_modules/core-js/client/shim.min.js',
             'node_modules/zone.js/dist/zone.js',
-            'node_modules/systemjs/dist/system.src.js'
+            'node_modules/systemjs/dist/system.src.js',
+            'angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
         ])
         .pipe(gulp.dest(appSrc + 'js/lib'));
 });
