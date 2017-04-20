@@ -23,7 +23,11 @@ export class HeroFormComponent {
   get diagnostic() { return JSON.stringify(this.model); }
 
   newHero() {
-    this.model = this.skyDog(); //new Hero(42, '', '');
+    this.model = this.emptyHero();
+  }
+
+  emptyHero() {
+    return new Hero(42, '', '');
   }
 
   skyDog(): Hero {
